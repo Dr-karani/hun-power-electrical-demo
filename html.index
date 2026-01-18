@@ -21,8 +21,13 @@
 <!-- HERO -->
 <header class="hero">
   <div class="hero-content">
-    <h1>Trusted London Electrician<br>28+ Years Experience</h1>
-    <p>Domestic & Commercial Electrical Services | London, UK</p>
+    <header class="hero">
+  <div class="hero-bg"></div>
+
+  <div class="hero-content reveal">
+    <span class="badge">🇬🇧 London • Trusted Electrician</span>
+    <h1>Powering London Safely<br><span>28+ Years Experience</span></h1>
+    <p>Domestic & Commercial Electrical Services • Fully Insured • Fast Response</p>
 
     <div class="hero-buttons">
       <a href="#contact" class="btn primary">Get Free Quote</a>
@@ -30,8 +35,12 @@
     </div>
 
     <div class="trust">
-      ⭐⭐⭐⭐⭐ Rated on MyBuilder & Checkatrade
+      ⭐⭐⭐⭐⭐ Rated 5.0 on MyBuilder & Checkatrade
     </div>
+  </div>
+
+  <div class="hero-3d">
+    <img src="assets/images/electric-3d.svg" alt="3D Electrical Icon">
   </div>
 </header>
 
