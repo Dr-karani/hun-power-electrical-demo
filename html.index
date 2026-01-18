@@ -1,1 +1,82 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HUN POWER ELECTRICAL | London Electrician</title>
+
+  <link rel="stylesheet" href="css/style.css" />
+  <script defer src="js/main.js"></script>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<!-- WHATSAPP FLOAT -->
+<a href="https://wa.me/447000000000" class="whatsapp-float">WhatsApp</a>
+
+<!-- HERO -->
+<header class="hero">
+  <div class="hero-content">
+    <h1>Trusted London Electrician<br>28+ Years Experience</h1>
+    <p>Domestic & Commercial Electrical Services | London, UK</p>
+
+    <div class="hero-buttons">
+      <a href="#contact" class="btn primary">Get Free Quote</a>
+      <a href="tel:+447000000000" class="btn secondary">Call Now</a>
+    </div>
+
+    <div class="trust">
+      ⭐⭐⭐⭐⭐ Rated on MyBuilder & Checkatrade
+    </div>
+  </div>
+</header>
+
+<!-- TRUST STRIP -->
+<section class="trust-strip">
+  <div>✔ 28+ Years Experience</div>
+  <div>✔ London Based</div>
+  <div>✔ Fully Insured</div>
+  <div>✔ Verified Reviews</div>
+</section>
+
+<!-- SERVICES -->
+<section class="services">
+  <h2>Our Electrical Services</h2>
+
+  <div class="service-grid">
+    <div class="card">Electrical Installations</div>
+    <div class="card">Fault Finding & Repairs</div>
+    <div class="card">Consumer Unit Upgrades</div>
+    <div class="card">Lighting Installation</div>
+    <div class="card">Emergency Call-Out</div>
+    <div class="card">Commercial Electrical Work</div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section class="about">
+  <h2>About HUN POWER ELECTRICAL</h2>
+  <p>
+    With over <strong>28 years of hands-on experience</strong>, HUN POWER ELECTRICAL
+    provides reliable, high-quality electrical services across London.
+    Every job is personally handled with professionalism, precision, and care.
+  </p>
+</section>
+
+<!-- CONTACT -->
+<section class="contact" id="contact">
+  <h2>Contact Us</h2>
+  <p>Serving London & Surrounding Areas 🇬🇧</p>
+  <a href="mailto:info@hunpowerelectrical.co.uk" class="btn primary">Email Us</a>
+</section>
+
+<footer>
+  © 2026 HUN POWER ELECTRICAL | London, United Kingdom
+</footer>
+
+</body>
+</html>
