@@ -65,6 +65,27 @@
     <div class="card">Commercial Electrical Work</div>
   </div>
 </section>
+<section class="reviews">
+  <h2>What Our Customers Say</h2>
+
+  <div class="review-slider">
+    <div class="review active">
+      ⭐⭐⭐⭐⭐
+      <p>Excellent service, very professional and reliable.</p>
+      <span>— London Homeowner</span>
+    </div>
+    <div class="review">
+      ⭐⭐⭐⭐⭐
+      <p>Quick response and high quality work. Highly recommended.</p>
+      <span>— Verified MyBuilder Client</span>
+    </div>
+    <div class="review">
+      ⭐⭐⭐⭐⭐
+      <p>Honest, experienced electrician. Will use again.</p>
+      <span>— Checkatrade Customer</span>
+    </div>
+  </div>
+</section>
 
 <!-- ABOUT -->
 <section class="about">
