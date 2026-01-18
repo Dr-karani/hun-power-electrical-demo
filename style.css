@@ -7,42 +7,88 @@
 
 body {
   background: #f4fff6;
-  color: #222;
+  color: #1a1a1a;
+}
+
+/* NAV */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 8%;
+  background: white;
+  align-items: center;
+}
+
+.logo {
+  height: 50px;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #0f3d2e;
+  font-weight: 600;
+}
+
+.nav-btn {
+  background: #1db954;
+  padding: 8px 16px;
+  color: white;
+  border-radius: 20px;
 }
 
 /* HERO */
 .hero {
+  position: relative;
   min-height: 100vh;
-  background: linear-gradient(135deg, #b6f2c2, #ffffff);
+  background: url("../assets/images/hero-bg.jpg") center/cover no-repeat;
   display: flex;
   align-items: center;
-  justify-content: center;
-  text-align: center;
-  padding: 20px;
+  padding: 8%;
 }
 
-.hero h1 {
-  font-size: 2.5rem;
-  margin-bottom: 15px;
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(255,255,255,0.85);
 }
 
-.hero p {
-  font-size: 1.1rem;
-  margin-bottom: 25px;
+.hero-content {
+  position: relative;
+  max-width: 600px;
 }
 
-.hero-buttons {
-  display: flex;
-  gap: 15px;
-  justify-content: center;
-  flex-wrap: wrap;
+.uk-badge {
+  background: #0f3d2e;
+  color: white;
+  padding: 6px 14px;
+  border-radius: 20px;
+  display: inline-block;
 }
 
+.hero h1 span {
+  color: #1db954;
+}
+
+.hero-visual {
+  position: absolute;
+  right: 5%;
+  bottom: 10%;
+  width: 280px;
+}
+
+/* BUTTONS */
 .btn {
-  padding: 12px 25px;
+  padding: 12px 26px;
   border-radius: 30px;
   text-decoration: none;
   font-weight: 600;
+  display: inline-block;
 }
 
 .primary {
@@ -55,121 +101,48 @@ body {
   color: #1db954;
 }
 
-/* TRUST STRIP */
-.trust-strip {
-  display: flex;
-  justify-content: space-around;
-  background: white;
-  padding: 15px;
-  font-weight: 600;
-}
-
 /* SERVICES */
 .services {
-  padding: 60px 20px;
+  padding: 80px 8%;
   text-align: center;
 }
 
 .service-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 20px;
-  margin-top: 30px;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+  margin-top: 40px;
 }
 
-.card {
+.service-card {
   background: white;
-  padding: 25px;
-  border-radius: 15px;
-  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
-  transition: transform 0.3s;
-}.hero {
-  position: relative;
+  border-radius: 18px;
   overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+  transition: transform .3s;
 }
 
-.hero-bg {
-  position: absolute;
-  inset: 0;
-  background: radial-gradient(circle at top, #b6f2c2, #ffffff 60%);
-  animation: pulse 6s infinite alternate;
-}
-
-@keyframes pulse {
-  from { opacity: 0.9; }
-  to { opacity: 1; }
-}
-
-.badge {
-  background: #0f3d2e;
-  color: #fff;
-  padding: 6px 14px;
-  border-radius: 20px;
-  display: inline-block;
-  margin-bottom: 15px;
-  font-size: 0.9rem;
-}
-
-.hero h1 span {
-  color: #1db954;
-}
-
-.hero-3d {
-  position: absolute;
-  right: 5%;
-  bottom: 10%;
-  width: 220px;
-  opacity: 0.9;
-}
-
-.card:hover {
+.service-card:hover {
   transform: translateY(-10px);
+}
+
+.service-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
 }
 
 /* ABOUT */
 .about {
-  background: #ffffff;
-  padding: 60px 20px;
-  text-align: center;
-}
-
-/* CONTACT */
-.contact {
-  padding: 60px 20px;
-  text-align: center;
   background: #eafff0;
-}
-
-/* FOOTER */
-footer {
-  background: #0f3d2e;
-  color: white;
+  padding: 80px 8%;
   text-align: center;
-  padding: 20px;
 }
 
-/* WHATSAPP FLOAT */
-.whatsapp-float {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  background: #25d366;
-  color: white;
-  padding: 15px 20px;
-  border-radius: 50px;
-  text-decoration: none;
-  font-weight: bold;
-  }
+/* REVIEWS */
 .reviews {
-  padding: 70px 20px;
-  background: #ffffff;
+  padding: 80px 8%;
   text-align: center;
-}
-
-.review-slider {
-  max-width: 600px;
-  margin: 40px auto 0;
-  position: relative;
 }
 
 .review {
@@ -180,3 +153,43 @@ footer {
 .review.active {
   display: block;
 }
+
+/* CONTACT */
+.contact {
+  background: #1db954;
+  color: white;
+  text-align: center;
+  padding: 70px 8%;
+}
+
+/* FOOTER */
+footer {
+  background: #0f3d2e;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+/* WHATSAPP */
+.whatsapp {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  background: #25d366;
+  color: white;
+  padding: 14px 20px;
+  border-radius: 40px;
+  text-decoration: none;
+}
+
+/* ANIMATION */
+.reveal {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: 1s;
+}
+
+.reveal.show {
+  opacity: 1;
+  transform: translateY(0);
+  }
