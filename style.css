@@ -160,3 +160,23 @@ footer {
   text-decoration: none;
   font-weight: bold;
   }
+.reviews {
+  padding: 70px 20px;
+  background: #ffffff;
+  text-align: center;
+}
+
+.review-slider {
+  max-width: 600px;
+  margin: 40px auto 0;
+  position: relative;
+}
+
+.review {
+  display: none;
+  font-size: 1.1rem;
+}
+
+.review.active {
+  display: block;
+}
