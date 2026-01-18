@@ -1,18 +1,20 @@
+// Reveal animation
+const reveals = document.querySelectorAll(".reveal");
 
-document.addEventListener("scroll", () => {
-  document.querySelectorAll(".card").forEach(card => {
-    const pos = card.getBoundingClientRect().top;
-    if (pos < window.innerHeight - 100) {
-      card.style.opacity = "1";
-      card.style.transform = "translateY(0)";
+window.addEventListener("scroll", () => {
+  reveals.forEach(el => {
+    if (el.getBoundingClientRect().top < window.innerHeight - 100) {
+      el.classList.add("show");
     }
   });
 });
+
+// Reviews slider
 let reviews = document.querySelectorAll(".review");
-let index = 0;
+let i = 0;
 
 setInterval(() => {
-  reviews[index].classList.remove("active");
-  index = (index + 1) % reviews.length;
-  reviews[index].classList.add("active");
-}, 4000);
+  reviews[i].classList.remove("active");
+  i = (i + 1) % reviews.length;
+  reviews[i].classList.add("active");
+}, 3500);
